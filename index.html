@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onbeforeunload=" return myFunction()">
+
+    <h1>Tugas Mandiri 13 M tsani</h1>
+    <!-- onerror -->
+    <img src="img.jpg" alt=" " onerror="myfunction()">
+
+    <br><br>
+
+    <a href="https://www.youtube.com/" > pindah halaman</a>
+   
+</body>
+
+    
+    <script>
+
+        // onload 
+        window.onload = () =>{
+                alert("Loading....!!")
+            }
+        // onerror
+        myfunction = () =>{
+            alert("tidak dapat memuat gambar")
+        }
+
+        // onunload 
+        window.onunload = () => {
+        alert("terimakasih telah berkunjung")
+        }
+
+        // onbeforeunload
+        const myFunction = () =>{
+            return "pindah halaman"
+        }
+    </script>
+</html>
